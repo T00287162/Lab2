@@ -24,5 +24,6 @@ public class ApplyExplosionForce : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print("Ouch");
+        collision.transform.position += 10 * Vector3.up;
     }
 }
